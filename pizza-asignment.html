@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Pizzaiolo</title>
+</head>
+<body>
+    <header class="w-full h-full bg-red-900 top-0 left-0">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between">
+                <a class="text-neutral-400 text-4xl font-bold hover:text-white py-4">Pizzaiolo</a>
+
+                <button id="menuButton" class="lg:hidden text-neutral-400 hover:text-white focus:outline-none">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+
+                <!-- Desktop Menu -->
+                <ul class="hidden lg:flex space-x-6 items-center">
+                    <li><a href="#home" class="text-neutral-400 hover:text-white">Home</a></li>
+                    <li><a href="#about" class="text-neutral-400 hover:text-white">About</a></li>
+                    <li><a href="#cards" class="text-neutral-400 hover:text-white">Services</a></li>
+                    <li><a href="#" class="text-neutral-400 hover:text-white">Contact</a></li>
+                </ul>
+
+                <!-- Mobile Menu -->
+                <div id="mobileMenu" class="absolute hidden top-16 left-0 right-0 bg-slate-800 lg:hidden">
+                    <ul class="flex flex-col gap-4 p-5 text-white">
+                        <li><a href="#" class="text-neutral-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white">Services</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section href="#home" class="w-full h-screen flex items-center justify-center bg-[url(hero-bg.jpeg)] bg-cover bg-center">
+        <div class="text-center space-y-6 bg-black bg-opacity-50 p-10 rounded-lg">
+            <h1 class="text-4xl lg:text-7xl font-bold text-white">Delicious Pizza, Freshly Baked</h1>
+            <p class="text-white text-lg">Experience the taste of authentic pizza made with love</p>
+            <div>
+                <a href="#" 
+                   class="bg-red-600 text-white px-6 py-3 inline-block rounded-lg shadow-lg hover:bg-red-700 transition duration-300">
+                   Order Now
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="w-full h-auto flex items-center bg-gray-200 py-12 px-6">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 grid-cols-1 gap-8 items-center">
+            <!-- Text Content -->
+            <div class="space-y-6">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-800">About Us</h2>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Welcome to our pizza paradise! We are passionate about delivering the freshest, tastiest pizza made with love. 
+                    Our mission is to bring joy to your taste buds with every bite. Experience the difference with our handcrafted 
+                    recipes and finest ingredients.
+                </p>
+                <a href="#" 
+                   class="bg-red-600 text-white px-6 py-3 inline-block rounded-lg shadow-lg hover:bg-red-700 transition duration-300">
+                   Order Now
+                </a>
+            </div>
+            
+            <!-- Image -->
+            <div class="flex justify-center">
+                <img src="about-pic.jpeg" alt="About Us" class="rounded-lg shadow-lg w-full lg:w-4/5">
+            </div>
+        </div>
+    </section>
+    
+    <section class="w-full h-auto py-12 px-6">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center mb-8">
+                <h2 class="text-4xl font-bold text-gray-800">Types of Pizzas</h2>
+                <p class="text-gray-600 text-lg mt-2">Explore our variety of freshly baked pizzas, made with the finest ingredients!</p>
+            </div>
+    
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="card rounded-lg shadow-lg bg-white p-4">
+                    <img src="margherita-pizz.jpeg" alt="Margherita Pizza" class="w-full h-48 object-cover rounded-t-lg" />
+                    <div class="mt-4 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Margherita Pizza</h3>
+                        <p class="text-gray-600 mt-2">A classic pizza with fresh tomatoes, mozzarella, basil, and a drizzle of olive oil.</p>
+                    </div>
+                </div>
+    
+                
+                <div class="card rounded-lg shadow-lg bg-white p-4">
+                    <img src="chicken-pizz.jpeg" alt="Chicken Pizza" class="w-full h-48 object-cover rounded-t-lg" />
+                    <div class="mt-4 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Chicken Pizza</h3>
+                        <p class="text-gray-600 mt-2">A hearty pizza topped with grilled chicken, mozzarella, and tangy BBQ sauce.</p>
+                    </div>
+                </div>
+    
+                
+                <div class="card rounded-lg shadow-lg bg-white p-4">
+                    <img src="bbq-pizz.jpeg" alt="BBQ Pizza" class="w-full h-48 object-cover rounded-t-lg" />
+                    <div class="mt-4 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">BBQ Pizza</h3>
+                        <p class="text-gray-600 mt-2">A smoky and savory pizza with BBQ sauce, mozzarella, and fresh toppings.</p>
+                    </div>
+                </div>
+    
+                
+                <div class="card rounded-lg shadow-lg bg-white p-4">
+                    <img src="veggie-pizz.jpeg" alt="Veggie Pizza" class="w-full h-48 object-cover rounded-t-lg" />
+                    <div class="mt-4 text-center">
+                        <h3 class="text-xl font-semibold text-gray-800">Veggie Pizza</h3>
+                        <p class="text-gray-600 mt-2">A vibrant mix of fresh veggies, mozzarella, and a flavorful tomato base.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">About Us</h3>
+                    <p class="text-gray-400">
+                        Welcome to our pizza paradise! We deliver freshly baked pizzas made with love and the finest ingredients. Your satisfaction is our priority.
+                    </p>
+                </div>
+    
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#menu" class="text-gray-400 hover:text-white transition">Menu</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+    
+                
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2">
+                        <li><span class="text-gray-400">📍 123 Pizza Street, Foodie City, Accra</span></li>
+                        <li><span class="text-gray-400">📞 (123) 456-7890</span></li>
+                        <li><span class="text-gray-400">📧 hello@pizzaparadise.com</span></li>
+                    </ul>
+                </div>
+            </div>
+    
+            
+            <div class="border-t border-gray-700 my-8"></div>
+    
+            
+            <div class="flex flex-col md:flex-row items-center justify-between">
+               
+                <div class="flex space-x-4 mb-4 md:mb-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                </div>
+    
+                
+                <p class="text-gray-400 text-sm">
+                    © 2025 Pizza Paradise. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/72c4965b41.js" crossorigin="anonymous"></script>
+</body>
+</html>
